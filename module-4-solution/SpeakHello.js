@@ -1,7 +1,7 @@
 // STEP 2: Wrap the entire contents of SpeakHello.js inside of an IIFE
 // See Lecture 52, part 2
 
-( function (window) {
+( function () {
     var helloSpeaker={};
     var speakWord = "Hello";
     helloSpeaker.speak = function (name) {
@@ -17,7 +17,7 @@
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
 
 window.helloSpeaker = helloSpeaker;
-}) (window);
+}) ();
 
 
 // STEP 4: Rewrite the 'speak' function such that it is attached to the
